@@ -1,11 +1,11 @@
 // Generated on 2015-04-18 using generator-angular 0.9.2
 'use strict';
 
-// # Globbing
+/* Globbing
 // for performance reasons we're only matching one level down:
 // 'test/spec/{,*/}*.js'
 // use this if you want to recursively match all subfolders:
-// 'test/spec/**/*.js'
+// 'test/spec/**/*.js'  */
 
 module.exports = function (grunt) {
 
@@ -16,7 +16,7 @@ module.exports = function (grunt) {
   require('time-grunt')(grunt);
 
   // Configurable paths for the application
-  var appConfig = {
+  let appConfig = {
     app: require('./bower.json').appPath || 'app',
     dist: 'dist'
   };
