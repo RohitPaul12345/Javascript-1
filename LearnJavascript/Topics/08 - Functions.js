@@ -8,8 +8,8 @@ describe('Functions', function () {
     expect(addNumbers(1, 2)).toBe(3);
     expect(addNumbers(2, 3)).toBe(5);
     expect(addNumbers(1 + 1, 2 + 1)).toBe(5);//Parameters can also be expressions, which the function will resolve before starting
-    var numberOne = 2;
-    var numberTwo = 3;
+    let numberOne = 2;
+    let numberTwo = 3;
     expect(addNumbers(numberOne, numberTwo)).toBe(5);//Parameters can also be variables
   });
 
@@ -23,7 +23,7 @@ describe('Functions', function () {
   /*Scopes*/
   it('Global and Local Variables', function () {
     /*Global Variables (on this scope)*/
-    var globalVariable = 1;//global variables could be accessed from anywhere in the program
+    let globalVariable = 1;//global variables could be accessed from anywhere in the program
 
     function addUsingGlobalVariable(localNumberOne) {
       //localNumberOne is a Local Variable and could only be accessed from the function's scope
@@ -41,9 +41,9 @@ describe('Functions', function () {
   });
   it('A functions local variables are not available once the functions scope is closed', function () {
 
-    var localVariable = 6;
+    let localVariable = 6;
     function localFunction() {
-      var localVariable = 5;
+      let localVariable = 5;
       return localVariable;
     }
     localFunction();
